@@ -4,7 +4,7 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 cp elk.repo /etc/yum.repos.d/
 
-yum install --enablerepo=elk elasticsearch logstash kibana filebeat -y
+yum install --enablerepo=elasticsearch elasticsearch logstash kibana filebeat -y
 
 cp elastic.yaml /etc/elasticsearch
 cp logstash.yml /etc/logstash
